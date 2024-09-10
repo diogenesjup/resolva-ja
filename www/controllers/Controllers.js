@@ -23,13 +23,13 @@ class App {
         }
         if(ambiente=="PRODUCAO"){
 
-            this.urlDom = "https://servidorseguro.cloud/spz-servicos/app/www/";
-            this.urlApi = "https://servidorseguro.cloud/spz-servicos/apiservicekeys/";
-            this.urlCdn = "https://servidorseguro.cloud/spz-servicos/cdn/";
+            this.urlDom = "https://servidorseguro.cloud/resolva-ja/app/www/";
+            this.urlApi = "https://servidorseguro.cloud/resolva-ja/apiservicekeys/";
+            this.urlCdn = "https://servidorseguro.cloud/resolva-ja/cdn/";
 
         }
 
-        this.urlApiPagto = "https://servidorseguro.cloud/spz-servicos/pay/";
+        this.urlApiPagto = "https://servidorseguro.cloud/resolva-ja/pay/";
 
         this.token = token;
         this.tokenSms = tokenSms;

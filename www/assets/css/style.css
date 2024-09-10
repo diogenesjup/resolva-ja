@@ -96,10 +96,10 @@ label{
     font-weight: normal;
     height: 45px;
     padding-top: 2px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
-    background: #ffff00 !important;
-    border-color: #ffff00 !important;
+    background: #8666d1 !important;
+    border-color: #8666d1 !important;
 }
 
 .btn-default,
@@ -213,14 +213,14 @@ footer .menu-2 img{
   display: block;
     margin-left: auto;
     /* margin-right: auto; */
-    margin-top: -40px;
+    margin-top: -47px;
     margin-bottom: -3px;
-    width: 100px;
+    width: 60px;
     max-width: 100px;
     left: 50%;
     height: auto;
     position: absolute;
-    margin-left: -50px;
+    margin-left: -30px;
     top: 0;
 }
 

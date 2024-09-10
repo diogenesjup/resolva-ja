@@ -1,24 +1,24 @@
 {
-  "name": "com.diogenesjunior.spzservicos",
-  "version": "1.2.0",
-  "description": "SPZ Serviços",
+  "name": "com.diogenesjunior.resolvaja",
+  "version": "1.0.0",
+  "description": "Resolva Já",
   "main": "index.html",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diogenesjup/spzservicos.git"
+    "url": "git+https://github.com/diogenesjup/resolvaja.git"
   },
   "keywords": [
-    "spzservicos"
+    "resolvaja"
   ],
-  "author": "SPZ Serviços Tecnologia",
+  "author": "Resolva Já Tecnologia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/diogenesjup/spzservicos/issues"
+    "url": "https://github.com/diogenesjup/resolvaja/issues"
   },
-  "homepage": "https://github.com/diogenesjup/spzservicos#readme",
+  "homepage": "https://github.com/diogenesjup/resolvaja#readme",
   "devDependencies": {
     "cordova-android": "^13.0.0"
   },

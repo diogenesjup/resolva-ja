@@ -300,7 +300,7 @@ class Views{
                      
                      <h2>
                        Olá novamente,<br>${localStorage.getItem("nomeCompletoUsuario")}<br>
-                       <small>Novos orçamentos da rede <br>SPZ SERVIÇOS:</small>
+                       <small>Novos orçamentos da rede <br>RESOLVA JÁ:</small>
                      </h2>
 
                      <div class="loop-novos-servicos" id="listaDeOrcamentos">
@@ -1767,7 +1767,7 @@ class Views{
                                   <p>&nbsp;</p>
 
                                   <p>
-                                    Compartilhe o aplicativo <b>SPZ SERVIÇOS</b> com seus amigos e contatos 
+                                    Compartilhe o aplicativo <b>RESOLVA JÁ</b> com seus amigos e contatos 
                                     e ganhe chaves para desbloquear orçamentos!
                                   </p>
                                   <p>
@@ -1776,11 +1776,11 @@ class Views{
 
                                   <div class="social">
                                       
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://twitter.com/intent/tweet?text=Conheça o aplicativo SPZ SERVIÇOS https://servicekeys.com.br')" title="Compartilhar no Twitter">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://twitter.com/intent/tweet?text=Conheça o aplicativo RESOLVA JÁ https://servicekeys.com.br')" title="Compartilhar no Twitter">
                                          <i class="fa fa-twitter"></i>
                                       </a>
 
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://wa.me/?text=Conheça o aplicativo SPZ SERVIÇOS https://servicekeys.com.br')" title="Compartilhar por WhatsApp">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://wa.me/?text=Conheça o aplicativo RESOLVA JÁ https://servicekeys.com.br')" title="Compartilhar por WhatsApp">
                                          <i class="fa fa-whatsapp"></i>
                                       </a>
 
@@ -1969,7 +1969,7 @@ class Views{
 
                                   <p>
                                     Tem alguma dúvida sobre como funciona a plataforma? Veja algumas perguntas e respostas que podem ser úteis. Você também
-                                    pode enviar um e-mail para <b>suporte@spzservicos.com.br</b>
+                                    pode enviar um e-mail para <b>suporte@resolvaja.com.br</b>
                                   </p>
                                   
 
@@ -2094,7 +2094,7 @@ class Views{
             
                <div class="row view-login" view-name="view-login">
                   <div class="col-12 wow fadeInRight" data-wow-delay="0.0s" data-wow-duration="0.3s">
-                     <h2>SPZ SERVIÇOS</h2>
+                     <h2>Resolva Já</h2>
                      <p>Insira o código que recebeu por SMS</p>
                      
                      <form method="post" action="javascript:void(0)" onsubmit="app.procVerificarSms(event)">
