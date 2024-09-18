@@ -34,14 +34,18 @@ class Views{
                            <div class="form-check">
                               <input class="form-check-input" type="radio" name="tipoPerfil" id="tipoServicoCliente" value="cliente" checked>
                               <label class="form-check-label" for="tipoServicoCliente">
-                                <img src="assets/images/profile.svg" alt="Encontrar profissionais" /> Encontrar profissionais
+                                <span style="position: relative;display: block;float: left;width: 42px;height: 42px;border-radius: 100%;background: #8666d1;margin-right: 10px;margin-top: -8px;text-align: center;">
+                                    <img src="assets/images/novo-encontro.png" style="filter: invert(1);position: absolute;display: block;left: 0px;top: 4px;width: 96%;" alt="Contratar Serviços" />
+                                </span> Contratar Serviços
                               </label>
                            </div>
 
                            <div class="form-check">
                               <input class="form-check-input" type="radio" name="tipoPerfil" id="tipoServicoPro" value="profissionais">
                               <label class="form-check-label" for="tipoServicoPro">
-                                <img src="assets/images/simbolo.svg" alt="Encontrar profissionais" />  Cadastrar meus serviços
+                                <span style="position: relative;display: block;float: left;width: 42px;height: 42px;border-radius: 100%;background: #f1b70c;margin-right: 10px;margin-top: -8px;text-align: center;">
+                                 <img src="assets/images/novo-servicoes2.png" alt="Sou um Profissional" style="filter: invert(1);position: absolute;display: block;left: 3px;top: 0px;width: 85%;" />
+                                 </span>  Sou um Profissional
                               </label>
                            </div>
                            
@@ -283,7 +287,7 @@ class Views{
 
                  <a class="saldo-atual" href="javascript:void(0)" onclick="app.resumoSaldoProfissional()" title="Seu saldo">
                     
-                    <img src="assets/images/saldo.svg" alt="Seu saldo atual" /> <span id="saldoAtualUsuarioHeader">${localStorage.getItem("saldoPrestadorServico")}</span>
+                    <img src="assets/images/simbolo.svg" alt="Seu saldo atual" /> <span id="saldoAtualUsuarioHeader">${localStorage.getItem("saldoPrestadorServico")}</span>
 
                  </a>
                  
@@ -301,7 +305,18 @@ class Views{
                      <h2>
                        Olá novamente,<br>${localStorage.getItem("nomeCompletoUsuario")}<br>
                        <small>Novos orçamentos da rede <br>RESOLVA JÁ:</small>
-                     </h2>
+                     </h2> 
+
+                     <div class="filtro-categorias">
+
+                        <label class="switch">
+                           <input type="checkbox" id="toggleSwitch" onchange="filtrarCategorias();">
+                           <span class="slider round"></span>
+                        </label> 
+
+                        Exibir apenas orçamentos das minhas categorias
+
+                     </div>
 
                      <div class="loop-novos-servicos" id="listaDeOrcamentos">
 
@@ -544,8 +559,8 @@ class Views{
                      </h2>
                      
                      <p style="font-size: 13px;width:80%;margin-bottom:30px;">
-                       O saldo <b>KEYS</b> é o que você utiliza para desbloquear os orçamento dentro da plataforma. 
-                       Você pode comprar novos pacotes de chaves sempre que quiser:
+                       O saldo <b>MOEDAS</b> é o que você utiliza para desbloquear os orçamento dentro da plataforma. 
+                       Você pode comprar novos pacotes de MOEDAS sempre que quiser:
                      </p>
 
                      <p style="font-size: 13px;width:80%;margin-bottom:30px;">
@@ -553,8 +568,8 @@ class Views{
                      </p>
 
                      <p>
-                        <a href="javascript:void(0)" onclick="app.comprarChaves();" style="padding-top:6px;" class="btn btn-primary" title="Comprar KEYS">
-                          COMPRAR KEYS
+                        <a href="javascript:void(0)" onclick="app.comprarChaves();" style="padding-top:6px;" class="btn btn-primary" title="Comprar MOEDAS">
+                          COMPRAR MOEDAS
                         </a>
                      </p>
 
@@ -691,8 +706,8 @@ class Views{
                       <a href="javascript:void(0)" title="Voltar" onclick="app.viewPrincipalProfissional();">
                          <img src="assets/images/voltar-views.svg" alt="Voltar" />
                       </a> 
-                      Comprar chaves</h2>
-                     <p>Pacote de KEYS para você desbloquear anúncios dentro da plataforma</p>
+                      Comprar MOEDAS</h2>
+                     <p>Pacote de MOEDAS para você desbloquear anúncios dentro da plataforma</p>
 
                      
                      <form id="formPacoteSelecao" method="post" action="javascript:void(0)" onsubmit="app.selecaoPacoteCompra(event)">
@@ -747,8 +762,8 @@ class Views{
                       <a href="javascript:void(0)" title="Voltar" onclick="app.comprarChaves();">
                          <img src="assets/images/voltar-views.svg" alt="Voltar" />
                       </a> 
-                      Comprar Keys</h2>
-                      <p>Você está comprando um pacote de chaves</p>
+                      Comprar MOEDAS</h2>
+                      <p>Você está comprando um pacote de moedas</p>
 
                            <div id="pacoteEscolhido"></div>
 
@@ -1768,7 +1783,7 @@ class Views{
 
                                   <p>
                                     Compartilhe o aplicativo <b>RESOLVA JÁ</b> com seus amigos e contatos 
-                                    e ganhe chaves para desbloquear orçamentos!
+                                    e ganhe MOEDAS para desbloquear orçamentos!
                                   </p>
                                   <p>
                                     Se as pessoas que você indicou, se cadastrarem, você ganha na hora até 100 chaves!!
@@ -1934,7 +1949,7 @@ class Views{
                                   </h2>
 
                                   <p>
-                                    Altere e customize as opções do aplicativo para que façam mais sentido para o seu uso.
+                                    Em breve teremos novidades para você!
                                   </p>
                                   
 
@@ -2208,12 +2223,12 @@ class Views{
                      <form method="post" action="javascript:void(0)" onsubmit="app.procCadastro(event)">
                         <input type="hidden" id="cadastroCelular" name="celularCadastro" value="${localStorage.getItem("celularCadastro")}" />
                         <div class="form-group">
-                           <label>Seu Nome</label>
-                           <input type="text" id="cadastroNome" onclick="ativarFormularioFlutuante('#cadastroNome','Seu nome completo')" class="form-control" placeholder="Seu nome completo" required />
+                           <label>Seu Nome Completo</label>
+                           <input type="text" id="cadastroNome" class="form-control" placeholder="Seu nome completo" required />
                         </div>
                         <div class="form-group">
-                           <label>Seu login</label>
-                           <input type="email" id="cadastroEmail" onclick="ativarFormularioFlutuante('#cadastroEmail','Seu e-mail (será o login)')" class="form-control" placeholder="Seu e-mail ou usuário" required />
+                           <label>Seu Endereço de E-mail</label>
+                           <input type="email" id="cadastroEmail" class="form-control" placeholder="Seu endereço de e-mail" required />
                         </div>
                         <div class="form-group">
                            <label>Sua senha</label>

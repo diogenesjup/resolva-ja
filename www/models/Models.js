@@ -904,8 +904,10 @@ carregarDetalheAtendimento(idAnuncio,acao){
 
               $(".body-autor h4").html(`${dados.orcamentos[0].titulo_origin}`);
 
-              $("#actionLigacao").attr("href",`tel:${dados.orcamentos[0].celular}`);
-              $("#actionWhatsApp").attr("onclick",`abrirUrl('https://api.whatsapp.com/send?l=pt_BR&phone=55${dados.orcamentos[0].celular}'`);
+              let celularLimpo = dados.orcamentos[0].celular.replace(/\D/g, '');
+
+              $("#actionLigacao").attr("href",`tel:${celularLimpo}`);
+              $("#actionWhatsApp").attr("href",`https://api.whatsapp.com/send?l=pt_BR&phone=55${celularLimpo}`);
 
             }else{
               
@@ -980,8 +982,8 @@ pacoteChaves(){
                                     <input class="form-check-input" type="radio" name="pacote" id="pacote${temp}" value="${n.qtd_chaves}" ${checked}>
                                     <label class="form-check-label" for="pacote${temp}">
                                       <img src="assets/images/simbolo.svg" alt="Comprar ${n.qtd_chaves} Chaves" />  
-                                      ${n.qtd_chaves} Keys 
-                                      <small>À vista por R$ ${n.valor_blr.replace(".",",")}</small>
+                                      ${n.qtd_chaves} Moedas 
+                                      <small>À vista por R$ ${n.valor_blr.replace(".",",")}<br>Validade de ${n.validade_dias} dias</small>
                                       <span>
                                         <d>ou em até 4X de</d>
                                         R$ ${resultado.toFixed(2).replace(".",",")}
@@ -1067,8 +1069,8 @@ selecaoPacoteDeChaves(pacoteEscolhido){
                                  <div class="form-check" style="margin-top: 23px;margin-bottom: 56px;">
                                     <input class="form-check-input" type="radio" name="pacote" id="pacote1" value="${pacoteEscolhido}" checked>
                                     <label class="form-check-label" for="pacote1">
-                                      <img src="assets/images/simbolo.svg" alt="Comprar ${pacoteEscolhido} Chaves" />  
-                                      ${pacoteEscolhido} Chaves 
+                                      <img src="assets/images/simbolo.svg" alt="Comprar ${pacoteEscolhido} Moedas" />  
+                                      ${pacoteEscolhido} MOEDAS 
                                       <small>À vista por R$ ${dados.pacotes[i].valor_blr.replace(".",",")}</small>
                                       <span>
                                         <d>ou em até 4X de</d>
