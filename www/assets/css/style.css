@@ -912,7 +912,7 @@ section#content .view-3{
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.09));
     border-radius: 20px;
     margin-top: 50px;
-    width: 86%;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -2030,15 +2030,15 @@ nav.destaque-cursos ul li small{
 
 .social a {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   border-radius: 100px;
   background: #f2f2f2;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 10px;
   margin-left: 12px;
   margin-right: 12px;
-  font-size: 19px;
+  font-size: 27px;
   color: #000;
 }
 

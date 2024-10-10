@@ -1791,15 +1791,11 @@ class Views{
 
                                   <div class="social">
                                       
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://twitter.com/intent/tweet?text=Conheça o aplicativo RESOLVA JÁ https://servicekeys.com.br')" title="Compartilhar no Twitter">
-                                         <i class="fa fa-twitter"></i>
-                                      </a>
-
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://wa.me/?text=Conheça o aplicativo RESOLVA JÁ https://servicekeys.com.br')" title="Compartilhar por WhatsApp">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('hhttps://api.whatsapp.com/send?l=pt_BR&text=Conheça o aplicativo RESOLVA JÁ https://linkdosite.com.br')" title="Compartilhar por WhatsApp">
                                          <i class="fa fa-whatsapp"></i>
                                       </a>
 
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://www.facebook.com/sharer/sharer.php?u=https://servicekeys.com.br')" title="Compartilhar no Facebook">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://www.facebook.com/sharer/sharer.php?u=https://linkdosite.com.br')" title="Compartilhar no Facebook">
                                          <i class="fa fa-facebook"></i>
                                       </a>
 

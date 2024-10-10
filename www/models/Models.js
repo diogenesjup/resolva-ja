@@ -661,6 +661,12 @@ orcamentosDisponiveis(){
 
               $("#saldoAtualUsuarioHeader").html(dados.saldo_usuario);
 
+              if(dados.saldo_usuario==""||dados.saldo_usuario==0||dados.saldo_usuario<0){
+
+                  confirmacao("Você está sem MOEDAS","Para desbloquear e visualizar os orçamentos, você precisa ter comprado algum pacote de moedas. Deseja fazer isso agora?","app.comprarChaves()","Comprar agora");
+
+              }
+
               console.log("COMECANDO A IMPRIMIR OS ORCAMENTOS NA TELA:");
 
               $("#listaDeOrcamentos").html(`
