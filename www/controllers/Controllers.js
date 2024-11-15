@@ -16,20 +16,20 @@ class App {
 
         if(ambiente=="HOMOLOGACAO"){
              
-            this.urlDom = "http://127.0.0.1:8080/services-keys/public_html/app/app/www/";
-            this.urlApi = "http://127.0.0.1:8080/services-keys/public_html/app/api/";
-            this.urlCdn = "http://127.0.0.1:8080/services-keys/public_html/app/cdn/";
-
-        }
-        if(ambiente=="PRODUCAO"){
-
             this.urlDom = "https://servidorseguro.cloud/resolva-ja/app/www/";
             this.urlApi = "https://servidorseguro.cloud/resolva-ja/apiservicekeys/";
             this.urlCdn = "https://servidorseguro.cloud/resolva-ja/cdn/";
 
         }
+        if(ambiente=="PRODUCAO"){
 
-        this.urlApiPagto = "https://servidorseguro.cloud/resolva-ja/pay/";
+            this.urlDom = "https://resolvaja.tec.br/app/www/";
+            this.urlApi = "https://resolvaja.tec.br/apiservicekeys/";
+            this.urlCdn = "https://resolvaja.tec.br/cdn/";
+
+        }
+
+        this.urlApiPagto = "https://resolvaja.tec.br/pay/";
 
         this.token = token;
         this.tokenSms = tokenSms;
@@ -440,7 +440,7 @@ filtrotabela(){
 
     }else{
 
-          aviso("Oops! Você não pode atender a esse orçamento","Suas categorias de atendimento não permitem atender a esse tipo de orçamento. Para alterar as suas categorias de atendimento, envie um e-mail para <b>suporte@resolvaja.com.br</b>");  
+          aviso("Oops! Você não pode atender a esse orçamento","Suas categorias de atendimento não permitem atender a esse tipo de orçamento. Para alterar as suas categorias de atendimento, envie um e-mail para <b>suporte@resolvaja.tec.br</b>");  
 
     }
         

@@ -1791,11 +1791,11 @@ class Views{
 
                                   <div class="social">
                                       
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://api.whatsapp.com/send?l=pt_BR&text=Conheça o aplicativo RESOLVA JÁ https://linkdosite.com.br')" title="Compartilhar por WhatsApp">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://api.whatsapp.com/send?l=pt_BR&text=Conheça o aplicativo RESOLVA JÁ https://resolvaja.tec.br')" title="Compartilhar por WhatsApp">
                                          <i class="fa fa-whatsapp"></i>
                                       </a>
 
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://www.facebook.com/sharer/sharer.php?u=https://linkdosite.com.br')" title="Compartilhar no Facebook">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://www.facebook.com/sharer/sharer.php?u=https://resolvaja.tec.br')" title="Compartilhar no Facebook">
                                          <i class="fa fa-facebook"></i>
                                       </a>
 
@@ -1980,7 +1980,7 @@ class Views{
 
                                   <p>
                                     Tem alguma dúvida sobre como funciona a plataforma? Veja algumas perguntas e respostas que podem ser úteis. Você também
-                                    pode enviar um e-mail para <b>suporte@resolvaja.com.br</b>
+                                    pode enviar um e-mail para <b>suporte@resolvaja.tec.br</b>
                                   </p>
                                   
 
@@ -2071,6 +2071,13 @@ class Views{
                         </div>
                         
                      </form>
+
+
+                     <div class="form-group link-apoio text-center">
+                            <a href="javascript:void(0)" title="Versão do Aplicativo" style="padding-top:20px;font-size:13px;">
+                               Versão 1.6.0
+                            </a>
+                          </div>
                      
                      <!--
                        <div class="form-group link-apoio text-center">
