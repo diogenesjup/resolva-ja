@@ -52,12 +52,14 @@ class Models{
               })
               request.done(function (dados) {            
 
-                  console.log("%c RETORNO DO LOGIN","background:#ff0000;color:#fff;");
+                  console.log("%c RETORNO DO LOGIN 2","background:#ff0000;color:#fff;");
                   console.log(dados);
 
                   $("#btnLoginEmailSenha").html("Login");
                   
                   if(dados.sucesso=="200"){
+
+                    console.log(dados);
 
                     var dadosUsuario = JSON.stringify(dados);
                      
@@ -66,7 +68,11 @@ class Models{
 
                      localStorage.setItem("dadosUsuario",dadosUsuario.dados);
                      
+                    
+                     localStorage.setItem("categoria1",dados.categoria);
+                     localStorage.setItem("categoria2",dados.categoria_2);
                      
+                     localStorage.setItem("dadosCompletosUsuario",JSON.stringify(dados));
 
                      localStorage.setItem("nomeUsuario",dados.nome);
 
