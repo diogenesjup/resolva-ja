@@ -2075,7 +2075,7 @@ class Views{
 
                      <div class="form-group link-apoio text-center">
                             <a href="javascript:void(0)" title="Versão do Aplicativo" style="padding-top:20px;font-size:13px;">
-                               Versão 1.7.2
+                               Versão 1.7.3
                             </a>
                           </div>
                      
@@ -2229,10 +2229,17 @@ class Views{
                            <label>Seu Nome Completo</label>
                            <input type="text" id="cadastroNome" class="form-control" placeholder="Seu nome completo" required />
                         </div>
+                        
                         <div class="form-group">
                            <label>Seu Endereço de E-mail</label>
                            <input type="email" id="cadastroEmail" class="form-control" placeholder="Seu endereço de e-mail" required />
                         </div>
+
+                        <div class="form-group">
+                           <label>Seu CPF</label>
+                           <input type="tel" id="cadastroCPF" class="form-control" placeholder="Número do CPF" required />
+                        </div>
+
                         <div class="form-group">
                            <label>Sua senha</label>
                            <input type="password" id="cadastroSenha" class="form-control" placeholder="Sua senha de acesso" required />
@@ -2259,7 +2266,7 @@ class Views{
             $("footer").hide();
 
             this.animarTransicao();
-
+            app.helpers.carregarMascaras();
     }
     
     viewEsqueciMinhaSenha(){

@@ -236,9 +236,10 @@ class Models{
 
       $("#btnViewCadastro").html("Carregando...");
        
-      var cadastroNome = $("#cadastroNome").val();
-      var cadastroEmail = $("#cadastroEmail").val();
-      var cadastroSenha = $("#cadastroSenha").val();
+      var cadastroNome    = $("#cadastroNome").val();
+      var cadastroEmail   = $("#cadastroEmail").val();
+      var cadastroSenha   = $("#cadastroSenha").val();
+      var cadastroCPF     = $("#cadastroCPF").val();
       var cadastroCelular = localStorage.getItem("celularCadastro");
 
               // INICIO CHAMADA AJAX
@@ -246,7 +247,7 @@ class Models{
 
                   method: "POST",
                   url: app.urlApi+"cadastro-usuarios",
-                  data:{token:app.token,cadastroCelular:cadastroCelular,cadastroNome:cadastroNome,cadastroEmail:cadastroEmail,cadastroSenha:cadastroSenha}
+                  data:{token:app.token,cadastroCelular:cadastroCelular,cadastroNome:cadastroNome,cadastroEmail:cadastroEmail,cadastroSenha:cadastroSenha,cadastroCPF:cadastroCPF}
               
               })
               request.done(function (dados) {            
