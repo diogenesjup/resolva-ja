@@ -1394,6 +1394,8 @@ atualizarSaldoCompra(){
 
 salvarDadosCompraUsuario(customer,id){
 
+      return;
+
      console.log("SALVAR OS DADOS DO ASAAS NO HISTÓRICO DE PEDIDOS DO CLIENTE");
 
      var idUsuario = localStorage.getItem("idUsuario");
