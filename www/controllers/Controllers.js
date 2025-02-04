@@ -104,6 +104,9 @@ class App {
     logoff(){
        
         localStorage.clear();
+        
+        // RECARREGAR AS CATEGORIAS E DADOS PADRÕES
+        app.models.testeApi();
         app.viewLogin();
 
     }
