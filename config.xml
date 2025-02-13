@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.diogenesjunior.resolvaja"
-        version   = "1.7.5">
+        version   = "1.7.6">
 
         <!-- LEMBRAR DE MUDAR O APP ID ANTES DE SUBIR O APP NAS LOJAS -->
 
@@ -14,7 +14,7 @@
         Resolva Já - Contrate profissionais qualificados perto de você
     </description>
 
-    <author href="https://servidorseguro.cloud/resolva-ja/" email="diogenesjunior.ti@gmail.com">
+    <author href="https://resolvaja.tec.br/" email="diogenesjunior.ti@gmail.com">
         Resolva Já
     </author>
  
@@ -33,9 +33,10 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-installLocation" value="auto" />
     <preference name="StatusBarBackgroundColor" value="#000" />
-    <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="SplashScreen" value="none" />
-    <preference name="ShowSplashScreen" value="false" />
+   
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="www/assets/images/2.png" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#fff" />
+
     <preference name="android-minSdkVersion" value="29" />
     <preference name="android-targetSdkVersion" value="34" />
     <preference name="AndroidXEnabled" value="true" />
